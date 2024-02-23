@@ -1,0 +1,218 @@
+@import url('./main.css');
+
+.particles {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.lightRight {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.lightLeft {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+body {
+    background: var(--dark-blue);
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    max-width: 28rem;
+    margin: 0 auto;
+    height: calc((100vh - 6vh) - 2.118rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100vw;
+    gap: 3.563rem;
+    padding-top: 4.5rem;
+}
+
+p {
+    color: var(--violet-50);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 6vh;
+    padding-top: 2.118rem;
+    gap: .313rem;
+}
+
+.inputSearch {
+    background: linear-gradient(90deg, rgba(40,36,53,1) 0%, rgba(40,36,53,0) 100%);
+    border: none;
+    padding: 0.875rem 1.25rem;
+    border-radius: 10px;
+    width: 100%;
+    color: var(--violet-400);
+}
+
+.inputSearch::placeholder {
+    color: var(--violet-400);
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2.813rem;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(13,14,26,.8) 0%, rgba(7,9,19,.0) 100%);
+    backdrop-filter: blur(5px);
+    padding: 2.5rem;
+    outline: 10px solid linear-gradient(180deg, rgba(41,37,54,1) 0%, rgba(41,37,54,1) 100%);
+}
+
+.mainContentTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.813rem;
+}
+
+.photoUser {
+    border-radius: 50%;
+    width: 10.188rem;
+    height: 10.188rem;
+    border: 5px solid transparent;
+    outline: 2px solid var(--violet-400);
+}
+
+.nameUser {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1.938rem;
+}
+
+.identificationProfile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+}
+
+.identificationProfileContent{
+    display: flex;
+    align-items: center;
+    gap: 2.313rem; 
+}
+
+.identificationProfileContent > div {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+.aboutUserContent {
+    text-align: justify;
+    font-family: Inter, 'sans-serif';
+    color: var(--violet-100);
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.btnGoToGitHub {
+    width: 18.813rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.476rem;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: lighter;
+    border-radius: 10px;
+    padding: 0.625rem 0;
+    z-index: 1;
+    background: linear-gradient(42deg, rgba(53,19,73,1) 0%, rgba(68,25,94,1) 23%, rgba(135,53,182,1) 70%, rgba(199,107,255,1) 100%);
+}
+
+.lightBlur {
+    content: ' ';
+    width: 18.813rem;
+    height: 4.375rem;
+    background: #9c29e475;
+    border-radius: 20px;
+    margin: 0 auto;
+    filter: blur(20px);
+    position: relative;
+    bottom: 6.7rem;
+}
+
+.formSearchUser {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btnSeaerch {
+    background: linear-gradient(42deg, rgba(53,19,73,1) 0%, rgba(68,25,94,1) 23%, rgba(135,53,182,1) 70%, rgba(199,107,255,1) 100%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btnSeaerch:hover {
+    opacity: .8;
+}
+  
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 11px;
+    }
+
+    .lightRight {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 50vw;
+    }
+    
+    .lightLeft {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50vw;
+    }
+
+    .particles {
+        position: fixed;
+        top: 0;
+        width: 200vw;
+        z-index: -1;
+    }
+    
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+
