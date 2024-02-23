@@ -1,6 +1,6 @@
 # DevDiscover - Visualizador de Perfil de Usuário GitHub
 
-![DevDiscover Logo](<API GITHUB/src/img/lgGithub.svg>)
+![DevDiscover Logo](<src/img/lgGithub.svg>)
 
 ## Visão Geral
 
